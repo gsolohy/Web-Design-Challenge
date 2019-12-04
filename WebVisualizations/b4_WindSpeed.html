@@ -1,27 +1,73 @@
 <!DOCTYPE HTML>
 <html lang='en'>
-    <head> <meta charset='UTF-8'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Wind Speed</title>
     </head>
     
-    <body style='background-color:white'>
-            <link rel='stylesheet' href='css/styles.css'>        
-            <div class='navbar'>
-                    <a href="a_Home.html">Latitude</a>
-                <div class='dropdown'>
-                    <button class='dropbtn'>Plots
-                        <i class='fa fa-caret-down'></i>
-                    </button>
-                    <div class='dropdown-content'>
-                        <a href='b1_MaxTemp.html'>Max Temperature</a>
-                        <a href='b2_Humidity.html'>Humidity</a>
-                        <a href='b3_Cloudiness.html'>Cloudiness</a>
-                        <a href='b4_WindSpeed.html'>Wind Speed</a>
-                    </div>
-                </div>
-                <a href="c_Comparison.html">Comparison</a>
-                <a href="d_Data.html">Data</a>
+    <body>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel='stylesheet' href='css/styles.css'>
+
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href="a_Home.html" id="websitelogo">Latitude</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="navbar-nav ml-auto mynav">
+                    <li class="dropdown nav-item ">
+                        <a href="#" class="dropdown-toggle nav-link dlink" data-toggle="dropdown">Plots
+                            <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu ddm">
+                            <a href='b1_MaxTemp.html' class='dropdown-item'>Max Temperature</a>
+                            <a href='b2_Humidity.html' class='dropdown-item'>Humidity</a>
+                            <a href='b3_Cloudiness.html' class='dropdown-item'>Cloudiness</a>
+                            <a href='b4_WindSpeed.html' class='dropdown-item'>Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="c_Comparison.html" class="nav-link dlink">Comparison</a></li>
+                    <li class="nav-item"><a href="d_Data.html" class="nav-link dlink">Data</a></li>
+                </ul>
             </div>
-            <p>Wind Speed</p>
-        </body>
-    </html>
+        </nav>
+
+        <div class="container">
+            <div class="row">            
+                <div class="left-temp">
+                    <h3 class="header">Wind Speed</h3><hr><br>          
+                    <img src="Resources/assets/images/Fig4.png" alt="Latitude vs WindSpeed Chart" id="temp-description-image"/>
+                    <br>
+                    <p>There is no strong relationship between latitude and wind speed, however, it is interesting to see that a strong band of cities sits between 0 and 5% windspeed.</p>
+                </div>
+        
+                <div class="middle">          
+                </div>
+
+                <div class="right"><br>
+                    <h3 class="header">Visualizations</h3><hr><br>
+                    <div class="images-class">
+                    <a href='b1_MaxTemp.html'>
+                    <img src="Resources/assets/images/Fig1.png"  class="thumbnail-images" alt="Latitude-Temperature">
+                    </a>
+                    <a href="b2_Humidity.html">
+                        <img src="Resources/assets/images/Fig2.png"  class="thumbnail-images" alt="Latitude-Humidity">
+                    </a>
+                    <a href='b3_Cloudiness.html'>
+                        <img src="Resources/assets/images/Fig3.png"  class="thumbnail-images" alt="Latitude-Cloudiness">
+                    </a>
+                    <a href='b4_WindSpeed.html'>
+                        <img src="Resources/assets/images/Fig4.png" id="windspeed-image" class="thumbnail-images" alt="Latitude-WindSpeed">
+                    </a>
+                </div>
+            </div>            
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>          
+    </body>
+</html>
