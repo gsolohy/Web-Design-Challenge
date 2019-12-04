@@ -4,24 +4,70 @@
         <title>Max Temperature</title>
     </head>
     
-    <body style='background-color:white'>
-            <link rel='stylesheet' href='css/styles.css'>        
-            <div class='navbar'>
-                    <a href="a_Home.html">Latitude</a>
-                <div class='dropdown'>
-                    <button class='dropbtn'>Plots
-                        <i class='fa fa-caret-down'></i>
-                    </button>
-                    <div class='dropdown-content'>
-                        <a href='b1_MaxTemp.html'>Max Temperature</a>
-                        <a href='b2_Humidity.html'>Humidity</a>
-                        <a href='b3_Cloudiness.html'>Cloudiness</a>
-                        <a href='b4_WindSpeed.html'>Wind Speed</a>
+    <body>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel='stylesheet' href='css/styles.css'>
+
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href="a_Home.html" id="websitelogo">Latitude</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="navbar-nav ml-auto mynav">
+                    <li class="dropdown nav-item ">
+                        <a href="#" class="dropdown-toggle nav-link dlink" data-toggle="dropdown">Plots
+                            <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu ddm">
+                            <a href='b1_MaxTemp.html' class='dropdown-item'>Max Temperature</a>
+                            <a href='b2_Humidity.html' class='dropdown-item'>Humidity</a>
+                            <a href='b3_Cloudiness.html' class='dropdown-item'>Cloudiness</a>
+                            <a href='b4_WindSpeed.html' class='dropdown-item'>Wind Speed</a>
+                        </div>
+                    </li>            
+                    <li class="nav-item"><a href="c_Comparison.html" class="nav-link dlink">Comparison</a></li>
+                    <li class="nav-item"><a href="d_Data.html" class="nav-link dlink">Data</a></li>                        
+                </ul> 
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="left-temp">
+                    <h3 class="header">Max Temperature</h3><hr>
+                    <br>          
+                    <img src="Resources/assets/images/Fig1.png" alt="Latitude vs Max Temperature Chart" id="temp-description-image"/>
+                    <br>
+                    <p>As expected, the weather becomes significantly warmer as one approaches the equator(0 Deg. Latititude). More interestingly, however, is the fact that the southern hempisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+                </div>
+        
+                <div class="middle">        
+                </div>        
+        
+                <div class="right">
+                    <br>
+                    <h3 class="header">Visualizations</h3><hr>
+                    <br>
+                    <div class="images-class">
+                        <a href="vis-lat-temp.html">
+                            <img src="Resources/assets/images/Fig1.png" id="temp-image" class="thumbnail-images" alt="Latitude-Temperature">
+                        </a>
+                        <a href="vis-lat-humidity.html">
+                            <img src="Resources/assets/images/Fig2.png" class="thumbnail-images" alt="Latitude-Humidity">
+                        </a>
+                        <a href="vis-lat-cloudiness.html">
+                            <img src="Resources/assets/images/Fig3.png" class="thumbnail-images" alt="Latitude-Cloudiness">
+                        </a>
+                        <a href="vis-lat-windspeed.html">
+                            <img src="Resources/assets/images/Fig4.png" class="thumbnail-images" alt="Latitude-WindSpeed">
+                        </a>
                     </div>
                 </div>
-                <a href="c_Comparison.html">Comparison</a>
-                <a href="d_Data.html">Data</a>
             </div>
-            <p>Summary: Latitude vs. X</p>
-        </body>
-    </html>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
+    </body>
+</html>
